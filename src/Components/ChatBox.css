@@ -1,64 +1,79 @@
 .chatbox-container {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-  }
-  
-  .chat-window {
-    flex: 1;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 10px;
-    overflow-y: auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-  }
-  
-  .message {
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 80%;
-    line-height: 1.4;
-  }
-  
-  .user-msg {
-    background-color: #d1f0ff;
-    align-self: flex-end;
-    text-align: right;
-  }
-  
-  .ai-msg {
-    background-color: #f1f1f1;
-    align-self: flex-start;
-    text-align: left;
-  }
-  
-  .input-area {
-    display: flex;
-    gap: 10px;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #2980b9;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.user-msg {
+  background-color: #d1f0ff;
+  color: #000;
+  align-self: flex-end;
+  text-align: right;
+  border-top-right-radius: 0;
+}
+
+.ai-msg {
+  background-color: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+  text-align: left;
+  border-top-left-radius: 0;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
